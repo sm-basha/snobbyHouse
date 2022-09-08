@@ -4,7 +4,7 @@ html {
 
 .dance-font {
   font-family: 'Dancing Script', cursive;
-  font-size: 5rem !important;
+  font-size: 5rem;
 }
 
 .logoImg {
@@ -142,6 +142,7 @@ nav.black {
 
 #food{padding: 4rem 0 5rem 0;}
 #food .row img{ height: 300px; width: 300px;}
+#food h5 {font-size: 2.5rem;}
 
 /* FOOD - END */
 
