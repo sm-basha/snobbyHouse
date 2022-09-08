@@ -106,6 +106,41 @@ nav.black {
 
 /* CAROUSEL - END */
 
+/* STORY - START */
+
+#story{
+  background-image: url(images/footer_bg_2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+#story h1, #story p{color: #fff;}
+
+/* STORY - END */
+
+
+.dots{
+  background-image: url(images/tri-promo-bottom-white.png);
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* SIDE BRAND */
 
 .soc {
@@ -137,9 +172,6 @@ nav.black {
 }
 
 /* SOC-END */
-
-
-/* /////////////////////////////// */
 
 
 
