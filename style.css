@@ -150,16 +150,25 @@ nav.black {
 /* FOOTER */
 
 #contact{
-  padding: 4rem 0 5rem 0;
-  background-image: url(images/footer_bg.jpg);
+  padding: 6rem 0;
+  background-image: url(images/home_three_about_bg.png);
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 .footerImg{
-  height: 100px;
+  height: 110px;
   width: auto;  
 }
+.footerImg2{
+  height: 40px;
+  width: auto;  
+}
+.footerImg3{
+  height: 30px;
+  width: auto;  
+}
+
 .socImg{height: 50px; width: auto;}
 /* FOOTER - END */
 
