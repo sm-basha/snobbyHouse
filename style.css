@@ -156,6 +156,8 @@ nav.black {
   background-position:bottom;
   background-attachment: fixed;
 }
+
+#contact a{color: #000; text-decoration: none;}
 .footerImg{
   height: 110px;
   width: auto;  
@@ -168,8 +170,12 @@ nav.black {
   height: 30px;
   width: auto;  
 }
-
+.footerImg4{
+  height: 20px;
+  width: auto;  
+}
 .socImg{height: 50px; width: auto;}
+#contact span a{font-size: 1.5rem;color: #a5233a;}
 /* FOOTER - END */
 
 
