@@ -35,9 +35,9 @@ html {
   z-index: 1030;
 }
 
-/* .bg {
+.bg {
   background-color: #c2361a !important;
-} */
+}
 
 nav.black {
   background-color: rgba(0, 0, 0, 0.5);
