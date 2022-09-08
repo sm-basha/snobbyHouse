@@ -150,11 +150,11 @@ nav.black {
 /* FOOTER */
 
 #contact{
-  padding: 6rem 0;
+  padding: 6rem 0 1rem;
   background-image: url(images/home_three_about_bg.png);
   background-repeat: no-repeat;
-  background-position: center center;
-  /* background-attachment: fixed; */
+  background-position:bottom;
+  background-attachment: fixed;
 }
 .footerImg{
   height: 110px;
@@ -186,6 +186,8 @@ nav.black {
 .soc {
   color: #000;
   font-weight: bolder;
+  /* font-family: 'Dancing Script', cursive; */
+
   position: fixed;
   top: 50%;
   right: -55px;
