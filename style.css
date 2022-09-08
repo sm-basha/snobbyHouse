@@ -147,8 +147,21 @@ nav.black {
 /* FOOD - END */
 
 
+/* FOOTER */
 
-
+#contact{
+  padding: 4rem 0 5rem 0;
+  background-image: url(images/footer_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.footerImg{
+  height: 100px;
+  width: auto;  
+}
+.socImg{height: 50px; width: auto;}
+/* FOOTER - END */
 
 
 
