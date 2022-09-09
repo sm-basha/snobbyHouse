@@ -102,14 +102,25 @@
     gtag('config', 'G-BJLF89EZL7');
   </script>
 
+
+  <!-- date-picker -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
+  <!-- date-picker- END -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
 
+
+
 </head>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-md navbar-dark fixed-top ">
+<nav class="navbar navbar-expand-md navbar-light fixed-top ">
   <img class="logoImg ml-3" src="images/snobby-1.png" alt="logo">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
     aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -267,6 +278,143 @@
 
 </div>
 
+<!-- APPOINTMENTS -->
+
+<!-- FORM -->
+
+
+<div id="reservations">
+  <h1 class="dance-font text-center">RESERVATIONS </h1>
+  <img class="mx-auto d-block" src="images/red-ribbon.png" alt="">
+
+  <p class="mb-6">Book a table online. Leads will reach in your email.</p>
+  <div class="form-box">
+
+  
+    <form action="" method="post">
+  
+      <div class="row">
+        <div class='col-sm-6'>
+          <div class="form-group">
+            <label for="date">Date *</label>
+            <input type='text' class="form-control" id='datepicker' data-date-format="DD-MM-YYYY" class="form-control" required="">
+          </div>
+        </div>
+  
+        <div class='col-sm-6'>
+          <div class="form-group">
+            <label for="time">Time *</label>
+            <input type='text' class="form-control" id='timepicker' data-date-format="HH:mm" class="form-control" required="">
+          </div>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="name">Your Name *</label>
+        <input class="form-control" id="name" type="text" name="Name" required="">
+      </div>
+      <div class="form-group">
+        <label for="">Phone *</label>
+        <input name="phone" type="tel" maxlength="10" pattern="[6-9]{1}[0-9]{9}"
+          title="Please enter a Valid Mobile number." id="phone" class="form-control" required="">
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input class="form-control" id="email" type="email" name="Email">
+      </div>
+  
+  
+  
+      <div class="form-group">
+        <label for="guest">Guest? *</label>
+        <select class="form-control text-center" id="sel1" required="">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>Banquet</option>
+        </select>
+        </div>
+  
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" name="Message"></textarea>
+      </div>
+      <!-- <div class=" form-group">
+        <label for="date">Date *</label>
+        <div class="input-group date" id="datepicker">
+          <input type="text" class="form-control">
+          <span class="input-group-append">
+            <span class="input-group-text bg-white d-block">
+              <i class="fa fa-calendar"></i>
+            </span>
+          </span>
+        </div>
+      </div> -->
+  
+      <input class="btn btn-primary" type="submit" value="Make a Reservation" />
+  </div>
+</div>
+
+
+
+
+
+<div class="container">
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- FOOTER -->
@@ -298,23 +446,27 @@
     <a href="mailto:snobbyhouse@gmail.com" target="_blank">
       <p>
         <img class="footerImg4 mr-2 " src="images/mail.png" alt="">
-        snobbyhouse@gmail.com   
+        snobbyhouse@gmail.com
       </p>
     </a>
 
     <br>
 
     <div class="text-center m-auto">
-      <a href="https://www.facebook.com/" target="_blank"><img class="footerImg3 m-2" src="images/facebook-removebg-preview.png" alt=""></a>
-      <a href="https://instagram.com" target="_blank"><img class="footerImg3 m-2" src="images/instagram-removebg-preview.png" alt=""></a>
+      <a href="https://www.facebook.com/" target="_blank"><img class="footerImg3 m-2"
+          src="images/facebook-removebg-preview.png" alt=""></a>
+      <a href="https://instagram.com" target="_blank"><img class="footerImg3 m-2"
+          src="images/instagram-removebg-preview.png" alt=""></a>
       <a href="https://twitter.com"><img class="footerImg3 m-2" src="images/twitter-removebg-preview.png" alt=""></a>
-      <a href="https://api.whatsapp.com/send?phone=919502720548" target="_blank"><img class="footerImg3 m-2" src="images/whatsapp-removebg-preview.png" alt=""></a>
+      <a href="https://api.whatsapp.com/send?phone=919502720548" target="_blank"><img class="footerImg3 m-2"
+          src="images/whatsapp-removebg-preview.png" alt=""></a>
     </div>
     <hr style="color: green;">
-    
+
     <div class="text-center">
       <span>&copy; 2022 SNOBBY House. All Rights Reserved</span>
-      <span class="ml-4"> Handicraft by <a class="dance-font" href="https://urbusiness.online/">UrBusiness.Online</a></span>
+      <span class="ml-4"> Handicraft by <a class="dance-font"
+          href="https://urbusiness.online/">UrBusiness.Online</a></span>
     </div>
 
   </div>
@@ -354,6 +506,17 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+
+
+
 <script src="index.js"></script>
 <script src="animate.js"></script>
 
@@ -373,6 +536,43 @@
   })
 </script>
 
+<!-- <script type="text/javascript">
+  $(function () {
+    $('#datepicker').datepicker();
+  });
+</script> -->
+
+<script>
+  $(function () {
+
+    console.clear();
+
+    $('#datepicker').datetimepicker({
+      minDate: moment().add(300, 'm').startOf("day")
+    })
+      .val(moment().add(300, 'm').format("DD-MM-YYYY"))   // To set correct "valid" date from start
+
+      .on('dp.change', function (e) {
+        var now = moment().format("X");
+        //console.log(e.date.format("X"));
+        //console.log(now);
+
+        // Comparing selected date (moment object) in milliseconds
+        if (e.date.format("X") + (300 * 60 * 1000) > now) {
+          console.log("above 5 hours, unlocking time.");
+          $('#timepicker').data("DateTimePicker").minDate(false);
+        } else {
+          console.log("below 5 hours, locking time (and probably resetting the value to min...)");
+          $('#timepicker').data("DateTimePicker").minDate(moment().add(300, 'm'));
+        }
+
+      });
+
+    $('#timepicker').datetimepicker({
+      minDate: moment().add(300, 'm'),
+    });
+  });
+</script>
 
 </body>
 
