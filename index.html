@@ -299,14 +299,14 @@
         <div class='col-sm-6'>
           <div class="form-group">
             <label for="date">Date *</label>
-            <input type='text' class="form-control" id='datepicker' data-date-format="DD-MM-YYYY" class="form-control" required="">
+            <input type='text' class="form-control" id='datepicker' data-date-format="DD-MM-YYYY" class="form-control" name="BookingDate" required="">
           </div>
         </div>
   
         <div class='col-sm-6'>
           <div class="form-group">
             <label for="time">Time *</label>
-            <input type='text' class="form-control" id='timepicker' data-date-format="HH:mm" class="form-control" required="">
+            <input type='text' class="form-control" id='timepicker' data-date-format="HH:mm" class="form-control" name="BookedTime" required="">
           </div>
         </div>
       </div>
@@ -318,7 +318,7 @@
       <div class="form-group">
         <label for="">Phone *</label>
         <input name="phone" type="tel" maxlength="10" pattern="[6-9]{1}[0-9]{9}"
-          title="Please enter a Valid Mobile number." id="phone" class="form-control" required="">
+          title="Please enter a Valid Mobile number." id="phone" class="form-control" name="PhoneNumber" required="">
       </div>
       <div class="form-group">
         <label for="email">Email Address</label>
@@ -342,7 +342,7 @@
   
       <div class="form-group">
         <label for="message">Message</label>
-        <textarea class="form-control" id="message" name="Message"></textarea>
+        <textarea rows="2" type="text" class="form-control" id="message" name="Message"></textarea>
       </div>
       <!-- <div class=" form-group">
         <label for="date">Date *</label>
