@@ -76,6 +76,7 @@
   <meta name="google-site-verification" content="V_sj16CJjR1tH36TMOeNi1_zTKlrIx-MwcstnEOsPzc" />
 
   <!--  STYLESHEET -->
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -107,7 +108,8 @@
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
   <!-- date-picker- END -->
 
@@ -291,7 +293,7 @@
   <div class="form-box">
 
   
-    <form action="" method="post">
+    <form id="submit-form" action="" class="contact-form">
   
       <div class="row">
         <div class='col-sm-6'>
@@ -361,62 +363,6 @@
 
 
 
-
-<div class="container">
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</form>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- FOOTER -->
 
 <div id="contact">
@@ -471,16 +417,6 @@
 
   </div>
 </div>
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -542,6 +478,8 @@
   });
 </script> -->
 
+
+<!-- datetimepicker -->
 <script>
   $(function () {
 
@@ -573,6 +511,41 @@
     });
   });
 </script>
+
+
+  <!-- FORM-mailto-SCRIPT -->
+  <script>
+    $("#submit-form").submit((e) => {
+      e.preventDefault()
+      $.ajax({
+        url: "https://script.google.com/macros/s/AKfycbwOL3cV18HVn6wg5kKAcQORY3Q3ITqwq_nLGMckcjx1XZPdRDnzJGOESHLcTdw7vRFG/exec",
+        data: $("#submit-form").serialize(),
+        method: "post",
+
+        success: function (response) {
+          swal("Successfully done.", {
+            title: "Your request has been recorded.",
+            text: "We will get back to you shortly",
+            icon: "success",
+            button: "OK",
+          }).then(okay => {
+            if (okay) {
+              window.location.reload();
+            }
+          });
+
+        },
+        error: function (err) {
+          swal({
+            title: "Fields Empty!",
+            text: "Please check the missing fields.",
+            icon: "warning",
+            button: "Close",
+          });
+        }
+      })
+    })
+  </script>
 
 </body>
 
